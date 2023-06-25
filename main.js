@@ -63,7 +63,9 @@ nav.forEach((e)=>{
 
 
 
-
+function uniqueId(){
+    return Math.floor(Math.random() * Date.now())
+}
 
 
 
@@ -78,6 +80,7 @@ btn.addEventListener('click',(e)=>{
       
         if (filter == undefined){
             var data = {
+                "id": uniqueId(),
                 "name": value,
                 "status": "inactived"
             }
@@ -200,8 +203,8 @@ function completed() {
             }>
            <label for="${e.name}">${e.name}</label>
         </div>
-        <div class="del" data-name="${e.name}">
-           <i class="fas fa-trash" data-name="${e.name}"></i>
+        <div class="del" data-id="${e.id}">
+           <i class="fas fa-trash" data-id="${e.id}"></i>
         </div>
       </li>
     `;
@@ -212,12 +215,13 @@ function completed() {
 
     lists_del.forEach((e) => {
         e.addEventListener('click', (el) => {
-            var getName = el.target.getAttribute('data-name')
+            var getId = Number(el.target.getAttribute('data-id'))
+            
 
-            var objetoRemover = { name: getName };
+            var objetoRemover = { id: getId };
 
             itens_completed = itens_completed.filter(function (objeto) {
-                return objeto.name !== objetoRemover.name;
+                return objeto.id !== objetoRemover.id;
             });
 
            
@@ -267,8 +271,6 @@ completed()
 
 
 
-
-//showData();
 
 
 
