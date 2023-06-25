@@ -126,12 +126,12 @@ li.tarea{
    display: none;
 }
 
-.tareas input[type=radio]:checked+label {
+.tareas input[type=checkbox]:checked+label {
     text-decoration: line-through;
 }
 
 
-.page_completed li{
+.tareas li{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,5 +147,36 @@ li.tarea{
 }
 
 .page_hide{
+    display: none;
+}
+
+ul li .list_btn input{
+    pointer-events: none;
+}
+.del_edit{
+    display: flex;
+    gap: 10px;
+}
+ .container i{
+    font-size: 14px;
+    color: red;
+}
+.fa-pen-to-square{
+    color: #2F80ED!important;
+}
+
+
+.agregar_edit{
+    display: flex;
+    position: relative;
+}
+
+.fa-circle-xmark{
+    position: absolute;
+    left: -17px;
+    top: 12px px;
+}
+.show_agregar_edit {
+
     display: none;
 }
