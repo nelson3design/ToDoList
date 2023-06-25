@@ -126,7 +126,7 @@ li.tarea{
    display: none;
 }
 
-.tareas-ul input[type=radio]:checked+label {
+.tareas input[type=radio]:checked+label {
     text-decoration: line-through;
 }
 
