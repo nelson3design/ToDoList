@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <div class="lista-tareas">
+      
             <h1>#todo</h1>
             <div class="navegacion">
                 <nav id="menu">
@@ -24,17 +25,23 @@
                 </nav>
             </div>
 
-            <div class="agregar show_agregar">
-                <input class="barra" id="texto" type="text" placeholder="add details">
-                <button id="boton" class="boton-class">Add</button>
+            <div class="agregar agregar_add show_agregar">
+                <input class="barra input_add" id="texto" type="text" placeholder="add details">
+                <button id="boton" class="boton-class btn_add">Add</button>
             </div>
 
-            <div class="tareas page_all">
+            <div class="agregar agregar_edit show_agregar_edit">
+                <input class="barra input_edit" id="texto" type="text" placeholder="add details">
+                <button id="boton" class="boton-class btn_edit">edit</button>
+                <i class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="tareas page_all all_icon">
                 <ul id="page_all" class="">
                     
                 </ul>            
             </div>
-            <div class="tareas page_active page_hide">
+            <div class="tareas page_active page_hide all_icon">
                 <ul id="page_active" class="">
             
                 </ul>
@@ -48,6 +55,7 @@
                 </div>
             </div>
 
+            
 
         </div>
     </div>
@@ -56,3 +64,4 @@
 </body>
 
 </html>
+
