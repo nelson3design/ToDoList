@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#todo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/74a7a5c80e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lista-tareas">
+            <h1>#todo</h1>
+            <div class="navegacion">
+                <nav id="menu">
+                    <ul id="lista" class="nav">
+                        <li class="active all">All</li>
+                        <li class="actived">Active</li>
+                        <li class="completed">Completed</li>
+                    </ul>
+                    <div class="linea"></div>
+                </nav>
+            </div>
+
+            <div class="agregar show_agregar">
+                <input class="barra" id="texto" type="text" placeholder="add details">
+                <button id="boton" class="boton-class">Add</button>
+            </div>
+
+            <div class="tareas page_all">
+                <ul id="page_all" class="">
+                    
+                </ul>            
+            </div>
+            <div class="tareas page_active page_hide">
+                <ul id="page_active" class="">
+            
+                </ul>
+            </div>
+            <div class="tareas page_completed page_hide">
+                <ul id="page_completed" class="">
+            
+                </ul>
+                <div class="btn_removeAll">
+                    <div class="removeAll remove_hide"><i class="fas fa-trash"></i>Delete all</div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
