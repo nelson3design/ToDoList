@@ -129,7 +129,9 @@ li.tarea{
 .tareas input[type=checkbox]:checked+label {
     text-decoration: line-through;
 }
-
+.page_completed label{
+    text-decoration: line-through;
+}
 
 .tareas li{
     display: flex;
